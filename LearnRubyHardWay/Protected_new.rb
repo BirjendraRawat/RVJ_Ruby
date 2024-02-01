@@ -1,22 +1,22 @@
 class Cat
- def initialize(name, age)
+  def initialize(name, age)
 	@name = name
 	@age = age
- end
+  end
 
- def speak
+  def speak
 	puts "I'm #{@name} and I'm #{@age} years old"
- end
+  end
 
 
 # this == method allows us to compare two objects own ages.
 # if both Cat's have the same age they will be considered equal.
 
- def ==(other)
+  def ==(other)
 	self.own_age == other.own_age
- end
+  end
 
- protected
+  protected
 	def own_age
 		self.age
 	end
